@@ -23,7 +23,10 @@ for i in range(start_range, 291, -1):
     # get to the file
     pg.moveTo(500, 300)
     time.sleep(0.2)
-    if i < 335:
+    if i < 310:
+        pg.scroll(-24)
+        file_y = 350 + 24 * (309 - i)
+    elif i < 335:
         pg.scroll(-16)
         file_y = 175 + 24 * (334 - i)
     elif i < 359:
